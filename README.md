@@ -15,6 +15,7 @@ To use Apivore, add the following to your Gemfile:
 ***WARNING:*** If apivore is listed in the Gemfile _above_ rspec then some issues, specifically `NameError: uninitialized constant RSpec::Mocks`, may arise when trying to run specs.
 
 ## Usage
+***Note:*** *The specs need to be run in a defined order and `expect(subject).to validate_all_paths` must be run last to ensure all routes are covered*
 
 Create a new request spec in spec/requests:
 ```ruby
